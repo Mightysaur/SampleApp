@@ -16,4 +16,5 @@ while true
     puts "Done in #{end_time - start_time} sec"
     puts
   end
+  sleep 1
 end
