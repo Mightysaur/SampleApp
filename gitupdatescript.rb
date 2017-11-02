@@ -1,8 +1,7 @@
-
 #!/usr/bin/env ruby
 require 'fileutils'
 
-every 1.second do
+while true
   Dir.glob('**/.git').each do |path|
     next if File.file?(path) # don't process submodules
     start_time = Time.now
