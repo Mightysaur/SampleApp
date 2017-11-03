@@ -15,6 +15,7 @@ default: &default
   username: team19@team19
   password: Team-19scenario
   azure: true
+  reconnect: true
 
 development:
   <<: *default
