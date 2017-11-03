@@ -10,7 +10,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
   host: team19.postgres.database.azure.com
-  port: 1433
+  port: 5433
   database: team19
   username: team19@team19
   password: Team-19scenario
