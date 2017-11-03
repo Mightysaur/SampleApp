@@ -5,21 +5,13 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: postgresql
-  encoding: unicode
+  adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  host: team19.postgres.database.azure.com
-  port: 5433
-  database: team19
-  username: team19@team19
-  password: Team-19scenario
-  azure: true
-  reconnect: true
 
 development:
   <<: *default
-  database: team19
+  database: db/development.sqlite3
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
